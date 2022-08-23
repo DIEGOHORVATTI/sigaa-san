@@ -135,7 +135,15 @@ a{color: var(--cor-destaque) !important;}
     margin-right: 140px !important;
 }
 
-#main-docente .simple-panel h4 { font-size: 12pt !important; }
+#main-docente .simple-panel h4 { 
+	font-size: 12pt !important; 
+	margin: 0rem 0rem 0.5rem 0rem !important;
+}
+
+
+#main-docente #avaliacao-portal table tbody tr:nth-last-child(4) td:nth-last-child(1){ 
+	display: none !important; 
+}
 
 #info-sistema {
     background-color: var(--dark) !important;
@@ -336,7 +344,17 @@ table.listagem tr td.periodo {
 #main-docente #avaliacao-portal table{
 	background-color: var(--dark) !important;
     padding: 0.7rem 0.7rem 0.7rem 0.7rem !important;
-    border-radius: var(--circle) !important;
     margin-bottom: 0.5rem !important;
     text-align: left !important;
+    border-radius: var(--circle) !important;
+}
+
+#main-docente #avaliacao-portal table tr{
+	padding: var(--circle) !important;
+    display: table-row !important;
+}
+
+#avaliacao-portal tbody{
+	margin: 0.5rem !important;
+    background-color: var(--dark) !important;
 }
