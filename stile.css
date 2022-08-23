@@ -1,0 +1,300 @@
+*{
+  border: transparent !important;
+  color: #fff !important;
+  background-color: transparent !important;
+  box-shadow: transparent !important;
+  transition-duration: 02s;
+  transition-delay: 0.5s;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-variant: contextual !important;
+}
+
+:root {
+  --dark: rgba( 0, 0, 0, 0.6 );
+  /*--dark: rgba( 240, 50, 255, 1 );*/
+  --circle: 0.4rem;
+  --cor-destaque: #f1117d;
+  --blue: #0ff;
+}
+
+html{ margin: 0 !important; padding: 0 !important; max-width: 100vw !important; }
+
+#rodape{ padding: 7%;}
+
+
+#container{ 
+	padding-top: 0.5rem !important;
+	height: 100%;
+	
+}
+
+a{color: var(--cor-destaque) !important;}
+
+#info-sistema {
+    color: #FFF;
+    background: transparent !important;
+}
+
+#container {
+    width: 98vw !important;
+}
+
+#perfil-docente .clear {
+	display: grid;
+}
+#perfil-docente .clear::before {
+	z-index: 0;
+	position: relative;
+	display: inline;
+	height: 7rem;
+	width: 7rem;
+	top: -6.5rem;
+	right:-10.5rem;
+	animation: anim 30s infinite;
+	background: radial-gradient(circle at 0% 0%, hotpink, slateblue);
+	border-radius: 30% 20% 53% 47% / 26% 46% 54% 74%;
+	box-shadow: 0 -2vmin 2vmin LightPink inset, 0 1vmin 2vmin MediumPurple inset,
+		0 -2vmin 7vmin purple inset;
+	content: "";
+	filter: drop-shadow(0 0 0vmin Thistle) drop-shadow(0 0vmin 1vmin Orchid)
+		drop-shadow(2vmin -2vmin 8vmin MediumSlateBlue)
+		drop-shadow(0 0 2vmin MediumOrchid);
+}
+
+@keyframes anim {
+	0%,
+	100% {
+		border-radius: 30% 70% 70% 30% / 30% 52% 48% 70%;
+		box-shadow: 0 -2vmin 4vmin LightPink inset, 0 -4vmin 4vmin MediumPurple inset,
+			0 -2vmin 7vmin purple inset;
+	}
+
+	10% {
+		border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%;
+	}
+
+	20% {
+		border-radius: 67% 33% 47% 53% / 37% 20% 80% 63%;
+	}
+
+	30% {
+		border-radius: 39% 61% 47% 53% / 37% 40% 60% 63%;
+		box-shadow: 0 -4vmin 8vmin hotpink inset, -1vmin -2vmin 6vmin LightPink inset,
+			-1vmin -2vmin 4vmin MediumPurple inset, 1vmin 4vmin 8vmin purple inset;
+	}
+
+	40% {
+		border-radius: 39% 61% 82% 18% / 74% 40% 60% 26%;
+	}
+
+	50% {
+		border-radius: 100%;
+		box-shadow: 0 4vmin 16vmin hotpink inset, 0 2vmin 5vmin LightPink inset, 0 4vmin 4vmin MediumPurple inset,
+			0 6vmin 8vmin purple inset;
+	}
+
+	60% {
+		border-radius: 50% 50% 53% 47% / 72% 69% 31% 28%;
+	}
+
+	70% {
+		border-radius: 50% 50% 53% 47% / 26% 22% 78% 74%;
+		box-shadow: 1vmin 1vmin 8vmin LightPink inset,
+			2vmin -1vmin 4vmin MediumPurple inset, -1vmin -1vmin 16vmin purple inset;
+	}
+
+	80% {
+		border-radius: 50% 50% 53% 47% / 26% 69% 31% 74%;
+	}
+
+	90% {
+		border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
+	}
+}
+#perfil-docente .pessoal-docente .foto img {
+	z-index: 1 !important;
+	position: absolute;
+	top: 3rem;
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 100% !important;
+}
+
+
+#perfil-docente .pessoal-docente ul {
+    margin-right: 140px !important;
+}
+
+#perfil-docente .pessoal-docente ul {
+    margin-right: 140px !important;
+}
+
+#main-docente .simple-panel h4 { font-size: 12pt !important; }
+
+#info-sistema {
+    background-color: var(--dark) !important;
+    padding: 0.5rem 0.7rem 0.5rem 0.7rem !important;
+    border-radius: var(--circle) !important;
+    border-bottom: none !important;
+    font-size: 9pt !important;
+}
+#info-sistema div.dir {top: 0.5rem !important;}
+
+#painel-usuario {
+    background-color: var(--dark) !important;
+    padding: 0.5rem 0.7rem 0.5rem 0.7rem !important;
+    border-radius: var(--circle) !important;
+    min-height: none !important;
+    height: auto !important;
+    margin-top: 0.5rem !important;
+}
+
+#painel-usuario #info-usuario  {
+    float: none !important; 
+    width: 570px;
+    padding: 5px 0px 5px 5px;
+}
+
+#painel-usuario #info-usuario p.periodo-atual, p.orcamento {
+    float: none !important; 
+    margin-bottom: 0.5rem !important;
+}
+
+#menu-dropdown {
+	margin-top: 0.5rem !important;
+    background-color: var(--dark) !important;
+    padding: 0.5rem 0.7rem 0.5rem 0.7rem !important;
+    border-radius: var(--circle) !important;
+}
+
+#main-docente #noticias-portal {
+	margin: 0.5rem 0rem 0rem 0rem !important;
+    background-color: var(--dark) !important;
+    padding: 0.5rem 0.7rem 0.5rem 0.7rem !important;
+    border-radius: var(--circle) !important;
+}
+
+#perfil-docente .pessoal-docente,
+#perfil-docente p.info-docente {
+	margin: 0.5rem 0rem 0rem 0rem !important;
+    background-color: var(--dark) !important;
+    padding: 0.5rem 0.7rem 0.5rem 0.7rem !important;
+    border-radius: var(--circle) !important;
+}
+
+form #agenda-docente {
+    margin: 0.5rem 0.5rem 0.5rem 0rem !important;
+    background-color: var(--dark) !important;
+    padding: 0.5rem 0.7rem 0.5rem 0.7rem !important;
+    border-radius: var(--circle) !important;
+    text-align: left !important;
+    display: flex;
+    overflow-x: scroll !important;
+}
+form #agenda-docente img {
+    margin-right: 0.5rem !important;
+}
+
+
+
+#main-docente #turmas-portal{
+	margin: 0.5rem 0rem 0rem 0rem !important;
+    background-color: var(--dark) !important;
+    padding: 0.5rem 0.7rem 0.5rem 0.7rem !important;
+    border-radius: var(--circle) !important;
+}
+#turmas-portal h4,
+#turmas-portal table:nth-of-type(2),
+.subFormulario, 
+.subFormulario th,
+#perfil-docente #agenda-docente {
+	margin: 0rem 0rem 0.5rem 0rem !important;
+    background-color: var(--dark) !important;
+    padding: 0.5rem 0.7rem 0.5rem 0.7rem !important;
+    border-radius: var(--circle) !important;
+}
+
+#turmas-portal table:nth-of-type(2) td{ padding: 0.5rem 0.7rem 0.5rem 0.7rem !important;}
+#turmas-portal table:nth-of-type(2) thead th{ 
+	text-align: left !important;
+	font-size: 10pt !important;
+    margin: 1rem 0rem 0.5rem 0rem !important;
+    padding: 0.5rem 0.7rem 0.5rem 0.7rem !important;
+    background-color: var(--dark) !important;
+    border-radius: var(--circle) !important;
+}
+
+#turmas-portal table:nth-of-type(2) thead th .info{ 
+	font-size: 10pt !important;
+    margin: 1rem 0rem 0.5rem 0rem !important;
+    padding: 0.5rem 0.7rem 0.5rem 0.7rem !important;
+    background-color: var(--dark) !important;
+    border-radius: var(--circle) !important;
+}
+
+/*#main-docente #turmas-portal .descricao, #main-docente #turmas-portal .info  {*/
+/*	border-bottom: 1px solid #fff !important;*/
+/*	text-align: left !important;*/
+/*	display: grid;*/
+/*    grid-template-rows: max-content 200px 1fr;*/
+/*    background: red !important;*/
+/*}*/
+/*#main-docente #turmas-portal .info:nth-last-child(2) center:hover {*/
+/*	border-bottom: 1px solid red !important;*/
+/*	width: 100%;*/
+/*}*/
+
+/*#main-docente #turmas-portal tbody {*/
+/*    background: blue !important;*/
+/*}*/
+
+
+.descricao:nth-of-type(2){
+    display: inline-block;
+    background: red !important;
+}
+
+
+/*
+table.listagem tr td.periodo {
+	display: block;
+	font-size: 10pt !important;
+    margin: 1rem  !important;
+    padding: 0.5rem 0.7rem 0.5rem 0.7rem !important;
+    background-color: var(--dark) !important;
+    border-radius: var(--circle) !important;
+    border-top: 0.4rem red !important;
+}
+*/
+
+
+/*Barra de rolagem*/
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: blue orange;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #000;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--cor-destaque);
+  border-radius: 100px;
+  border: 0px;
+}
+
+#forum-portal h4, #avaliacao-portal h4, #participantes h4, #rodape p, #main-docente .simple-panel {
+	background-color: var(--dark) !important;
+    padding: 0.5rem 0.7rem 0.5rem 0.7rem !important;
+    border-radius: var(--circle) !important;
+    min-height: none !important;
+    height: auto !important;
+    margin-top: 0.5rem !important;
+}
